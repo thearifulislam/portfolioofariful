@@ -605,14 +605,7 @@ img {
 
 /* Cursor
 -----------------------------------------------------------------*/
-.hover-this .hover-anim {
-  pointer-events: none;
-  -webkit-transition: -webkit-transform 0.2s linear;
-  transition: -webkit-transform 0.2s linear;
-  -o-transition: transform 0.2s linear;
-  transition: transform 0.2s linear;
-  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
-}
+
 
 .cursor {
   pointer-events: none;
@@ -10745,6 +10738,29 @@ header.in-box {
 
 
 
+.works-header .caption .sub-title {
+  position: relative;
+  padding-left: 20px;
+}
+
+.works-header .caption .sub-title:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.works-header .caption h1 {
+  font-size: 100px;
+  padding-bottom: 40px;
+}
 
 
 
